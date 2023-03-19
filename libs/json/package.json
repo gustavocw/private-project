@@ -1,0 +1,11 @@
+{
+  "name": "@alkord/json",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@alkord/shared": "*",
+    "mobx": "~5.15.7",
+    "moment": "^2.24.0",
+    "typedjson": "^1.8.0"
+  }
+}

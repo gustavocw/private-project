@@ -1,0 +1,38 @@
+{
+  "name": "@alkord/components",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@alkord/shared": "*",
+    "@date-io/moment": "1.x",
+    "@material-ui/core": "4.11.2",
+    "@material-ui/data-grid": "~4.0.0-alpha.33",
+    "@material-ui/icons": "4.11.3",
+    "@material-ui/lab": "4.0.0-alpha.57",
+    "@material-ui/pickers": "3.2.10",
+    "@material-ui/x-grid": "4.0.0-alpha.37",
+    "classnames": "~2.2.6",
+    "deep-equal": "~2.0.5",
+    "lodash-es": "^4.17.21",
+    "mobx": "~5.15.7",
+    "mobx-react": "~6.3.1",
+    "moment": "^2.24.0",
+    "notistack": "~1.0.5",
+    "react": "^16.14.0",
+    "react-data-grid": "~6.0.0",
+    "react-dom": "^16.14.0",
+    "react-number-format": "4.4.4",
+    "react-router-dom": "5.2.1",
+    "react-text-mask": "~5.4.3",
+    "yup": "~0.32.8"
+  },
+  "devDependencies": {
+    "@types/classnames": "~2.2.10",
+    "@types/deep-equal": "~1.0.1",
+    "@types/lodash": "~4.14.165",
+    "@types/lodash-es": "^4.17.6",
+    "@types/react": "16.14.26",
+    "@types/react-data-grid": "~4.0.5",
+    "@types/react-dom": "^16.9.17"
+  }
+}

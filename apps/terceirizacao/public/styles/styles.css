@@ -1,0 +1,347 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+	height: 100%;
+	background-color: #FAFAFA;
+	margin: 0;
+}
+
+body, td, a, div, .p {
+	font-family: 'Roboto', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+	font-size: 18px;
+}
+
+.material-icons.md-24 {
+	font-size: 24px;
+}
+
+.material-icons.md-36 {
+	font-size: 36px;
+}
+
+.material-icons.md-48 {
+	font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+	color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+/* DatePicker */
+
+.gwt-DatePicker {
+	cursor: default;
+	width: 100%;
+}
+
+.gwt-DatePicker td,
+.datePickerMonthSelector td:focus {
+	outline: none;
+}
+
+.datePickerMonthSelector td:focus {
+	outline: none;
+}
+
+.datePickerDays {
+	width: 100%;
+	background: white;
+	padding: 0 1rem;
+}
+
+.datePickerDay,
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+	font-size: 85%;
+	text-align: center;
+	padding: 0;
+	outline: none;
+	font-weight: 400;
+	color: #595959;
+	height: 36px;
+	width: 36px !important;
+	line-height: 36px;
+}
+
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+	padding: 0 4px 2px;
+	color: #999999;
+	font-size: 90%;
+	font-weight: 500;
+	height: 14px;
+	line-height: 14px;
+}
+
+.datePickerDay {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.datePickerDayIsWeekend {
+	background: #f7f7f7;
+}
+
+.datePickerDayIsFiller {
+	display: none;
+}
+
+.datePickerDayIsValue {
+	color: #fff !important;
+	font-weight: 400 !important;
+}
+
+.datePickerDayIsValue::before {
+	content: "";
+	box-shadow: inset 0 40px 0 #42a5f5;
+	display: block;
+	height: 36px;
+	width: 36px;
+	line-height: 0;
+	border-radius: 50%;
+	margin: 0 0 -36px 0;
+}
+
+.datePickerDayIsDisabled {
+	color: #AAAAAA;
+	font-style: italic;
+}
+
+.datePickerDayIsHighlighted {
+	color: #000;
+	font-weight: 500;
+}
+
+.datePickerDayIsValueAndHighlighted {
+}
+
+.datePickerDayIsToday {
+	color: #42a5f5;
+}
+
+.datePickerMonthSelector {
+	display: none;
+	width: 100%;
+	padding: 1px 0 0 0;
+	background: #fff;
+}
+
+.datePickerPreviousButton,
+.datePickerNextButton {
+	font-size: 28px;
+	line-height: 1em;
+	color: #737373;
+	font-weight: 500;
+	outline: none;
+	height: 36px;
+	width: 36px;
+	margin: auto;
+	text-align: center;
+}
+
+.datePickerPreviousButton:hover,
+.datePickerNextButton:hover {
+	cursor: pointer;
+	background: #edf6fc;
+}
+
+td.datePickerMonth {
+	text-align: center;
+	vertical-align: bottom;
+	white-space: nowrap;
+	font-size: 100%;
+	font-weight: 500;
+	color: #333;
+	line-height: 36px;
+	position: relative;
+	bottom: 3px;
+}
+
+.gwt-DateBox {
+	padding: 5px 4px;
+	border: 1px solid #ccc;
+	border-top: 1px solid #999;
+	font-size: 100%;
+}
+
+.dateBoxPopup {
+}
+
+::-ms-clear {
+	display: none;
+}
+
+.is-indeterminate .mdl-checkbox__box-outline {
+	border-color: rgba(0, 0, 0, .54) !important;
+}
+
+.is-indeterminate .mdl-checkbox__tick-outline {
+	background: none !important;
+	-webkit-mask: none !important;
+	mask: none !important;
+}
+
+.is-indeterminate .mdl-checkbox__tick-outline::after {
+	content: "";
+	position: absolute;
+	width: 70%;
+	height: 20%;
+	top: 40%;
+	left: 15%;
+	background: rgba(0, 0, 0, .54);
+	box-sizing: border-box;
+}
+
+.carregandoWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+}
+
+.carregando {
+	width: 40px;
+	height: 40px;
+	background-color: rgba(33, 150, 243, 0.30);
+	animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@keyframes sk-rotateplane {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	}
+	50% {
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	}
+	100% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+}
+
+.carregandoTexto {
+	margin-top: 15px;
+	color: #999;
+}
+
+.mdl-menu__item .is-active {
+	background: #ddd;
+}
+
+.mdl-list__item-primary-content > div {
+	width: 100%;
+}
+
+.Mui-expanded.Mui-selected .MuiTreeItem-label.MuiTypography-body1{
+	background: rgba(30, 150, 243, 0.12) !important;
+}
+
+.Mui-selected .MuiTypography-body1{
+	background: #FFF !important;
+}
+
+.spin {
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 2000ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 2000ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+span {
+	white-space: pre-wrap;
+}
+
+svg > g:last-child > g:last-child {
+	pointer-events: none;
+}
+
+* {
+	scrollbar-width: thin !important;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+	background: #f0f0f0;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: #cdcdcd;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #a6a6a6;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background: #606060;
+}

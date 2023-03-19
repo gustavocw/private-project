@@ -1,0 +1,15 @@
+{
+  "name": "@alkord/http",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@alkord/json": "*",
+    "@alkord/models": "*",
+    "@alkord/shared": "*",
+    "axios": "~0.21.0",
+    "axios-auth-refresh": "~3.0.0"
+  },
+  "devDependencies": {
+    "@types/axios": "~0.14.0"
+  }
+}
